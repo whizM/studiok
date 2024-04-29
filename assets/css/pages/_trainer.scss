@@ -1,0 +1,460 @@
+#p-trainer {
+    padding-top: 100px;
+
+    .c-fv {
+        background-image: url("../image/trainer/trainer_fv.png");
+    }
+
+    .p-trainerintro {
+        margin-top: 100px;
+        @include media-pc {
+            margin-top: 80px;
+        }
+        @include media-pc {
+            margin-top: 60px;
+        }
+        &__ttl {
+            font-family: $font-shin;
+            font-weight: normal;
+            font-size: 60px;
+            
+            text-align: center;
+            color: #7c3fd8;
+            @include media-pc {
+                font-size: 50px;
+            }
+            @include media-sp {
+                font-size: 35px;
+            }
+        }
+        &__main {
+            margin-top: 180px;
+            padding-bottom: 50px;
+            padding-top: 80px;
+            background-image: url("../image//trainer/sec1_bg.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include media-pc {
+                margin-top: 150px;
+            }
+            @include media-sp {
+                margin-top: 50px;
+            }
+            &--part {
+                font-family: $font-noto;
+                margin-top: 15px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                font-weight: normal;
+                font-size: 24px;
+                line-height: 45px;
+                color: #fff;
+                @include media-pc {
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                }
+                @include media-sp {
+                    font-size: 15px;
+                    line-height: 35px;
+                }
+                @include media-sp-sm {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+                &--img  {
+                    width: 519px;
+                    height: 876px;
+                    margin-top: -300px;
+                    @include media-sp {
+                        margin-top: -180px;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .trainer_name {
+                    font-family: $font-noto;
+                    font-weight: bold;
+                    font-size: 50px;
+                    line-height: 45px;
+                    text-align: left;
+                    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.5);
+                    &--id {
+                        font-size: 25px;
+                        @include media-sp {
+                            font-size: 20px;
+                        }
+                        @include media-sp-sm {
+                            font-size: 15px;
+                        }
+                    }
+                    @include media-sp {
+                        font-size: 35px;
+                        line-height: 30px;
+                    }
+                    @include media-sp-sm {
+                        font-size: 30px;
+                        text-align: center;
+                    }
+                }
+                .trainer_exp {
+                    font-family: $font-noto;
+                    margin-top: 30px;
+                    font-weight: normal;
+                    font-size: 30px;
+                    line-height: 60px;
+                    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.43);
+                    @include media-sp {
+                        font-size: 23px;
+                        line-height: 50px;
+                    }
+                    @include media-sp-sm {
+                        font-size: 15px;
+                        line-height: 40px;
+                    }
+                    &--item {
+                        font-size: 35px;
+                        text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.43);
+                        @include media-sp {
+                            font-size: 28px;
+                        }
+                        @include media-sp-sm {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .p-traineryoutube {
+        &__container {
+            margin: 100px 200px;
+            @include media-pc {
+                margin: 80px 100px;
+            }
+            @include media-sp {
+                margin: 60px 40px;
+            }
+        }
+        &__ttl {
+            font-family: $font-shin;
+            font-weight: normal;
+            font-size: 60px;
+            
+            text-align: center;
+            color: #7c3fd8;
+            @include media-pc {
+                font-size: 50px;
+            }
+            @include media-sp {
+                font-size: 35px;
+            }
+            @include media-sp-sm {
+                font-size: 30px;
+            }
+
+        }
+        &__links {
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;           
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 80px;
+            @include media-pc {
+                gap: 60px;
+            }
+            @include media-sp {
+                gap: 30px;
+            }
+            &--item {
+                width: calc(50% - 40px);
+                aspect-ratio: 16 / 9;
+                @include media-pc {
+                    width: calc(50% - 30px);
+                }
+                @include media-sp {
+                    width: 100%
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+        }
+    }
+
+    .p-recruite {
+        margin-top: 100px;
+        @include media-pc {
+            margin-top: 80px;
+        }
+        @include media-pc {
+            margin-top: 60px;
+        }
+        &__ttl {
+            font-family: $font-shin;
+            font-weight: normal;
+            font-size: 60px;
+            text-align: center;
+            color: #7c3fd8;
+            @include media-pc {
+                font-size: 50px;
+            }
+            @include media-sp {
+                font-size: 35px;
+            }
+            @include media-sp-sm {
+                font-size: 30px;
+            }
+        }
+        &__main {
+            margin-top: 60px;
+            padding-bottom: 50px;
+            padding-top: 60px;
+            background-image: url("../image//trainer/sec2_bg.png");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include media-pc {
+                margin-top: 150px;
+            }
+            @include media-sp {
+                margin-top: 50px;
+            }
+            &--uppart {
+                margin-top: 15px;
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
+                color: #fff;
+                @include media-pc {
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                }
+                @include media-sp {
+                    font-size: 15px;
+                    line-height: 35px;
+                }
+                @include media-sp-sm {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+                &--img  {
+                    width: 479px;
+                    height: 560px;
+                    @include media-sp {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                &--right {
+                    max-width: 600px;
+                    @include media-pc {
+                        max-width: none;
+                    }   
+                    .recruite_item {
+                        font-family: $font-kyokasho;
+                        font-weight: bold;
+                        font-size: 35px;
+                        line-height: 30px;
+                        margin-top: 48px;
+                        @include media-pc {
+                            text-align: center;
+                        }
+                        @include media-pc {
+                            font-size: 25px;
+                        }
+                    }
+                    .recruite_desc {
+                        font-family: $font-noto;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 40px;
+                        text-align: left; 
+                        margin-top: 60px;
+                        @include media-pc {
+                            text-align: center;
+                        }
+                        @include media-pc {
+                            font-size: 15px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+            }
+            &--downpart {
+                color: white;
+                .recruite_item {
+                    margin-top: 50px;
+                    font-family: $font-kyokasho;
+                    font-weight: bold;
+                    font-size: 35px;
+                    line-height: 50px;
+                    text-align: left;
+                    @include media-pc {
+                        text-align: center;
+                    }
+                    @include media-pc {
+                        font-size: 25px;
+                    }
+                }
+                .recruite_desc {
+                    margin-top: 10px;
+                    font-family: $font-noto;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 40px;
+                    text-align: left;   
+                    @include media-pc {
+                        text-align: center;
+                    }            
+                    @include media-pc {
+                        font-size: 15px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            &--btns {
+                margin-top: 60px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 100px;
+                justify-content: center;
+                @include media-sp {
+                    gap: 50px;
+                }
+                .trainerintro_btn {
+                    background: #9c73d9;
+                    max-width: 450px;
+                    border-radius: 100px;
+                    padding: 10px 33px;
+                    color: white;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 20px;
+                    font-family: $font-noto;
+                    font-weight: bold;
+                    font-size: 30px;
+                    line-height: 40px;
+                    text-align: center;
+                    @include media-sp {
+                        padding: 8px 20px;
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+                span svg{
+                    @include media-sp {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    .p-companyintro {
+        margin-top: 100px;
+        margin-bottom: 60px;
+        @include media-sp {
+            margin-top: 60px;
+            margin-bottom: 40px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__logo {
+            width: 641px;
+            height: 494px;
+            @include media-sp {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__phil {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &--ttl {
+                width: 330px;
+                padding: 10px 30px;
+                border-radius: 20px 20px 0px 0px;
+                background: #9c73d9;
+                font-family: $font-noto;
+                font-weight: bold;
+                font-size: 50px;
+                line-height: 45px;
+                text-align: center;
+                color: #ebef14;
+                @include media-sp {
+                    font-size: 30px;
+                    width: 200px;
+                }
+            }
+            &--desc {
+                padding: 10px;
+                background: #9c73d9;
+                border: 2px solid #fff;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                font-family: $font-noto;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 45px;
+                text-align: center;
+                color: #fff;
+                @include media-sp {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+        }
+        &__about {
+            margin-top: 40px;
+            font-family: $font-noto;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 50px;
+            text-align: left;
+            color: #2e2e2e;
+            @include media-sp {
+                font-size: 15px;
+                line-height: 35px;
+            }
+            &--item {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                @include media-sp {
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-top: 20px;
+                }
+                &--ttl {
+                    width: 100px;
+                }
+                &--desc {
+                    @include media-sp {
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

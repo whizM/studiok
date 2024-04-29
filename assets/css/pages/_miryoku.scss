@@ -1,0 +1,717 @@
+#p-miryoku {
+    padding-top: 100px;
+
+    
+    .c-fv {
+        background-image: url("../image/miryoku/miryoku.jpg");
+    }
+
+    .p-miryokumain {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include media-sp {
+            margin-top: 60px;
+        }
+        &__ttl {
+            width: 1200px;
+            font-size: 60px;
+            font-family: $font-futoline;
+            color: white;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            flex-wrap: wrap;
+            background-image: url("../image/miryoku/ttl-bg.png");
+            @include media-pc {
+                width: 100%;
+            }
+            @include media-sp {
+                font-size: 25px;
+                height: 80px;
+            }
+
+            small {
+                font-size: 30px;
+                font-family: $font-kyokasho;
+                position: absolute;
+                bottom: 20px;
+                right: 80px;
+                margin-left: 10px;
+
+                @include media-pc {
+                    position: initial;
+                    margin-top: 30px;
+                }
+
+                @include media-sp {
+                    font-size: 20px;
+                    margin-top: 20px;
+                }
+            }
+        }
+        &__item {
+            margin-top: 80px;
+            position: relative;
+            @include media-sp-sm {
+                margin-top: 60px;
+            }
+            &--sp {
+                width: 100%;
+                position: relative;
+                &--img {
+                    width: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    z-index: 0;
+                }
+            }
+            &--ttl {
+                font-family: $font-kyokasho;
+                font-weight: bold;
+                font-size: 1.5em;
+                text-align: center;
+                color: #fff;
+                padding-top: 40px;
+                position: relative;
+                z-index: 10;
+                background-color: #8c59d9;
+                padding: 10px 20px;
+                @include media-sp {
+                    font-size: 25px;
+                    line-height: 25px;
+                }
+            }
+            &--desc {
+                font-family: $font-noto;
+                font-size: 18px;
+                text-align: center;
+                padding: 30px;
+                line-height: 30px;
+                @include media-sp {
+                    font-size: 16px;
+                    padding-bottom: 0px;
+                }
+                &--big {
+                    font-size: 23px;
+                }
+                &--blue {
+                    color: #07a5eb;
+                }
+            }
+        }
+        &__reason {
+            width: 100%;
+            margin-top: 100px;
+            background: url("../image/miryoku/reason_bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            @include media-sp-sm {
+                margin-top: 60px;
+            }
+            &--ques {
+                padding-top: 100px;
+                @include media-sp {
+                    padding-top: 60px;
+                }
+                &--ttl {
+                    padding: 10px 20px;
+                    background: #fff;
+                    font-family: $font-kyokasho;
+                    font-weight: bold;
+                    font-size: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #2e2e2e;
+                    @include media-sp {
+                        font-size: 23px;
+                        padding: 5px 10px;
+                    }
+                }
+                &--desc {
+                    font-family: $font-noto;
+                    margin-top: 20px;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 40px;
+                    text-align: left;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    // gap: 50px;
+                    @include media-pc {
+                        justify-content: center;
+                    }
+                    @include media-sp {
+                        font-size: 14px;
+                        line-height: 25px;
+                        letter-spacing:-1px;
+                    }
+                }
+            }
+            &--answer {
+                margin-top: 30px;
+                &--ttl {
+                    background: white;
+                    padding: 10px 20px;
+                    margin-top: 30px;
+                    font-family: $font-kyokasho;
+                    font-weight: bold;
+                    font-size: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #2e2e2e;
+                    @include media-sp {
+                        font-size: 23px;
+                        padding: 5px 10px;
+                        line-height: 25px;
+                    }
+                }
+                &--desc {
+                    padding-top: 30px;
+                    font-family: $font-noto;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 40px;
+                    text-align: left;
+                    color: #fff;
+                    @include media-pc {
+                        justify-content: center;
+                    }
+                    @include media-sp {
+                        font-size: 14px;
+                        line-height: 25px;
+                        letter-spacing: -1px;
+                    }
+                }
+            }
+            .yellow_part {
+                color: #EBEF14;
+            }
+            &--btns {
+                padding-top: 40px;
+                display:flex;
+                gap: 50px;
+                @include media-sp {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    .p-miryoku__calorie {
+        margin-top: 100px;
+        @include media-sp {
+            margin-top: 60px;
+        }
+        &--ttl {
+            padding: 20px 20px;
+            background-image: url("../image/miryoku/calorie_ttl.jpg");
+            width: 100%;
+            height: 270px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .2);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: auto;
+            font-family: $font-kyokasho;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            @include media-pc {
+                font-size: 50px;
+                height: 220px;
+            }
+            @include media-sp {
+                font-size: 30px;
+                height: 180px;
+            }
+            @include media-sp-sm {
+                flex-direction: column;
+                line-height: 30px;
+            }
+        }
+        &--content {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding-top: 30px;
+
+            @include media-pc-sm {
+                flex-direction: column;
+            }
+
+            .content_left {
+                width: 50%;
+
+                @include media-pc-sm {
+                    width: 100%;
+                }
+                &--ttl {
+                    font-family: $font-noto;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    font-size: 35px;
+                    line-height: 50px;
+                    text-align: left;
+                    color: #07A5EB;
+                    @include media-pc {
+                        font-size: 22px;
+                        line-height: 40px;
+                    }
+                }
+                &--desc {
+                    font-size: 24px;
+                    line-height: 50px;
+                    color: #2e2e2e;
+                    font-weight: 400;
+                    margin-top: 20px;
+                    font-family: $font-noto;
+                    .blue_part {
+                        color: #07A5EB;
+                    }
+                    @include media-sp {
+                        font-size: 16px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            .content_right {
+                &--ttl {
+                    font-family: $font-noto;
+                    font-weight: bold;
+                    text-decoration: underline;
+                    font-size: 35px;
+                    line-height: 50px;
+                    text-align: left;
+                    color: #07A5EB;
+                    @include media-sp {
+                        font-size: 22px;
+                    }
+                }
+                &--img {
+                    width: 100%;
+                    margin-top: 20px;
+                    @include media-sp {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .p-miryoku__mitt {
+        margin-top: 100px;
+        @include media-sp {
+            margin-top: 60px;
+        }
+        &--ttl {
+            padding: 20px 20px;
+            background-image: url("../image/miryoku/hitting-mitt.jpg");
+            width: 100%;
+            height: 270px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .2);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: auto;
+            font-family: $font-kyokasho;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            @include media-pc {
+                font-size: 50px;
+            }
+            @include media-sp {
+                font-size: 30px;
+            }
+            @include media-pc {
+                height: 220px;
+            }
+            @include media-sp {
+                height: 180px;
+            }
+        }
+        &--desc {
+            font-family: $font-noto;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            text-align: left;
+            color: #2e2e2e;
+            margin-top: 30px;
+            @include media-sp {
+                font-size: 16px;
+                line-height: 30px;
+            }
+            .underlined_part {
+                font-family: $font-noto;
+                font-weight: bold;
+                text-decoration: underline;
+                font-size: 24px;
+                line-height: 50px;
+                text-align: left;
+                color: #2e2e2e;
+                @include media-sp {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+
+    .p-miryoku__flow {
+        margin-top: 100px;
+        @include media-sp-sm {
+            margin-top: 60px;
+        }
+        &--ttl {
+            padding: 20px 20px;
+            background-image: url("../image/miryoku/stretch.jpg");
+            width: 100%;
+            height: 270px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .2);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: auto;
+            font-family: $font-kyokasho;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            @include media-pc {
+                font-size: 50px;
+                height: 220px;
+            }
+            @include media-sp {
+                font-size: 30px;
+                line-height: 40px;
+                height: 180px;
+            }
+            @include media-sp-sm {
+                flex-direction: column;
+                line-height: 25px;
+                font-size: 25px;
+            }
+        }
+        &--subttl {
+            position: relative;
+            figure {
+                margin-top: 30px;
+            }
+            p {
+                position: absolute;
+                background-color: white;
+                padding: 20px 100px;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                border-radius: 100px;
+                color: #8c59d9;
+                font-weight: 600;
+                font-size: 25px;
+                @include media-sp {
+                    font-size: 14px;
+                    padding: 10px 40px;
+                }
+            }
+        }
+        &--imgs {
+            box-shadow: inset 0px 0px 400px 110px rgba(0, 0, 0, .2);
+            display: flex;
+            flex-direction: row;
+            height: auto;
+            figure {
+                width: 25%;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+        &--steps {
+            background-color: #8c59d9;
+            width: 100%;
+            padding: 0px 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 246px;
+            @include media-pc {
+                height: 200px;
+            }
+            @include media-sp {
+                flex-direction: column;
+                // justify-content: center;
+                align-items: center;
+                height: auto;
+                padding-bottom: 30px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+            }
+            .flow_step {
+                padding-top: 10px;
+                width: 400px;
+                position: relative;
+                @include media-pc {
+                    padding-top: 5px;
+                }
+                @include media-sp {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                &--ttl {
+                    font-family: $font-noto;
+                    font-weight: bold;
+                    font-size: 25px;
+                    line-height: 40px;
+                    text-align: center;
+                    color: #fff;
+                    @include media-pc {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                    @include media-sp {
+                        text-align: center;
+                    }
+                }
+                &--desc {
+                    font-family: $font-noto;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    text-align: right;
+                    color: #fff;
+                    @include media-pc {
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+                    @include media-sp {
+                        text-align: center;
+                    }
+                }
+                &--number {
+                    background-color: white;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 100%;
+                    font-size: 40px;
+                    color: #8c59d9;
+                    margin-left: auto;
+                    @include media-sp-sm {
+                        margin-left: unset;
+                    }
+                }
+            }
+            svg {
+                height: 100%;
+                @include media-sp {
+                    display: none;
+                }
+            }
+        }
+        &--btn {
+            padding-top: 50px;
+            a {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .p-miryoku__voice {
+        margin-top: 100px;
+        background-color: #8c59d9;
+        @include media-sp-sm {
+            margin-top: 60px;
+        }
+        &--ttl {
+            font-family: $font-futoline;
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 60px;
+            text-align: center;
+            color: #fff;
+            padding-top: 100px;
+            @include media-sp {
+                font-size: 30px;
+                line-height: 30px;
+                padding-top: 60px;
+            }
+        }
+        &--items {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            // align-items: center;
+            font-family: $font-noto;
+            max-width: 1200px;
+            padding: 60px 25px;
+            margin: 0 auto;
+
+            @include media-sp {
+                flex-direction: column;   
+                padding-top: 30px;
+            }
+        }
+        &--item {
+            font-size: 18px;
+            line-height: 30px;
+            padding-top: 30px;
+            width: 45%;
+            @include media-sp {
+                width: 100%;
+                font-size: 14px;
+                line-height: 25px;
+            }
+            &--img {
+                width: 100%;
+            }
+            &--desc {
+                margin-top: 20px;
+                padding: 10px 16px;
+                background-color: white;
+                // height: 100%;
+                .big_letter {
+                    font-size: 24px;
+                    @include media-sp {
+                        font-size: 20px;
+                    }
+                }
+                .yellow_bg {
+                    background-color: #EBEF14;
+                }
+                .question {
+                    font-weight: bold;
+                }
+            }
+            
+        }
+    }
+
+    .p-sponsor {
+        &__container {
+            max-width: 1600px;
+            padding: 100px 25px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+            @include media-sp-sm {
+                padding: 60px 20px;
+                padding-bottom: 0px;
+            }
+        }
+
+        &__ttl {
+            font-family: $font-shin;
+            font-size: 60px;
+            color: #7C3FD8;
+            text-align: center;
+
+            @include media-sp {
+                font-size: 30px;
+            }
+        }
+
+        &__list {
+            margin-top: 75px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+
+            @include media-sp {
+                gap: 10px;
+            }
+            @include media-sp-sm {
+                margin-top: 50px;
+            }
+        }
+
+        &__img {
+            width: 350px;
+            height: 160px;
+            object-fit: contain;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px #888;
+
+            @include media-sp {
+                width: 100px;
+                height: 45px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .p-supplier {
+        &__container {
+            max-width: 1000px;
+            padding: 100px 25px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 10;
+            @include media-sp-sm {
+                padding: 60px 20px;
+            }
+        }
+
+        &__ttl {
+            font-family: $font-shin;
+            font-size: 60px;
+            color: #7C3FD8;
+            text-align: center;
+
+            @include media-sp {
+                font-size: 30px;
+            }
+        }
+
+        &__list {
+            margin-top: 75px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            @include media-sp-sm {
+                margin-top: 60px;
+            }
+        }
+
+        &__name {
+            font-size: 30px;
+            font-weight: 600;
+
+            @include media-sp {
+                font-size: 20px;
+            }
+        }
+    }
+}

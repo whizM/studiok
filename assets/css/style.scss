@@ -1,0 +1,19 @@
+@import "./config";
+@import "./mixin";
+@import "./reset";
+@import "./component";
+@import "./loading";
+@import './pages/top';
+@import './pages/trainer';
+@import './pages/miryoku';
+@import './pages/price';
+@import './pages/reserve';
+
+html {
+    color: #2e2e2e;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}

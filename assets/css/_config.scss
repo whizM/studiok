@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700');
+
+@font-face {
+    font-family: "Futoline";
+    src: url(../fonts/A-OTF-ShinGoMin-Futoline.otf);
+}
+
+@font-face {
+    font-family: "udshin";
+    src: url(../fonts/A-OTF-UDShinGoPr6N-Heavy.otf);
+}
+
+@font-face {
+    font-family: "shin";
+    src: url(../fonts/AOTFShinGoProHeavy.otf);
+}
+
+@font-face {
+    font-family: "kyokasho";
+    src: url(../fonts/uddigikyokashon-b.ttc);
+}
+
+$font-noto: 'Noto Sans JP', sans-serif;
+$font-futoline: 'Futoline', sans-serif;
+$font-udshin: 'udshin', sans-serif;
+$font-shin: 'shin', sans-serif;
+$font-kyokasho: 'kyokasho', sans-serif;

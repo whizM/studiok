@@ -1,0 +1,16 @@
+<label><div class="field"><small>必須</small>お名前*</div> [text* your-name placeholder "例: 山田　花子"]</label>
+
+<label><div class="field"><small>必須</small>電話番号*</div> [tel* your-phone placeholder "例: 090-1234-5678"]</label>
+
+<label><div class="field"><small>必須</small>メールアドレス*</div> [email* your-email placeholder "例: ***********"]</label>
+
+<label><div class="field"><small>必須</small>第1ご希望日時*</div> [text* your-datetime1 class:walcf7-datetimepicker placeholder "日時を選択してください"]</label>
+
+<label><div class="field"><small>必須</small>第2ご希望日時*</div> [text* your-datetime2 class:walcf7-datetimepicker placeholder "日時を選択してください"]</label>
+
+<label><div class="field"><small>必須</small>第3ご希望日時*</div> [text* your-datetime3 class:walcf7-datetimepicker placeholder "日時を選択してください"]</label>
+
+<label><div class="field"><small>必須</small>その他要望、質問*</div> [textarea* your-message placeholder "入力してください..."]</label>
+
+
+[submit  class:btn-purple "内容を送信する"]
